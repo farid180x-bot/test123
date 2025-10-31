@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #123;
+  width: 100%;
+  height: 100vh;
+}
+
+.windw {
+  width: 360px;
+  height: 640px;
+  border-radius: 10px;
+  background: rgb(17, 24, 39);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #FFF;
+  padding: 10px;
+  /* border-bottom: 1px solid #ccc; */
+}
+
+#title {
+  text-transform: uppercase;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 5px;
+}
+
+.icons {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.icon1 {
+  background: rgb(206, 48, 48);
+}
+
+.icon2 {
+  background: rgb(255, 163, 42);
+}
+
+.icon3 {
+  background: rgb(7, 199, 7);
+}
+
+.code-run-view {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.codes {
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  max-height: 320px;
+}
+
+.code-run {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  direction: ltr;
+  display: flex;
+}
+
+.code {
+  position: relative;
+  direction: ltr;
+  color: #fff;
+  font-family: monospace;
+  padding: 10px;
+  line-height: 1.6;
+  font-size: 1.2em;
+  color: #ccc;
+  white-space: pre;
+  display: none;
+  overflow-y: auto;
+}
+
+.code.show {
+  display: block;
+}
+
+.co999 {
+  color: #999;
+}
+
+.coe2 {
+  color: #e2777a;
+}
+
+.co7e {
+  color: #7ec699;
+}
+
+.dff {
+  color: #e2777a #7ec699 #999;
+}
+
+.fontsAR {
+  font-family: "Noto Naskh Arabic", serif;
+}
+
+.btn {
+  transition: .3s ease-in-out;
+  padding: 10px 15px;
+  border-radius: 20px;
+  background: none;
+  border: 2px solid #CCC;
+  color: aqua;
+  font-size: 1.1em;
+  cursor: pointer;
+  width: 100%;
+}
+
+.btn:hover {
+  transform: scale(1.099);
+}
+
+.html-css-js {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 10px;
+  gap: 10px;
+}
+
+.imgs img {
+  width: 100%;
+  height: 100%;
+}
+
+.imgs {
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: .3s ease-in-out;
+}
+
+.imgs:hover {
+  transform: scale(1.099);
+}
+
+.imgs.pause #pause {
+  display: block;
+}
+
+.imgs #pause {
+  display: none;
+}
+
+.imgs.pause #play {
+  display: none;
+}
+
+.box {
+  transition: .5s ease-in-out;
+  display: flex;
+  width: 13%;
+  height: 100%;
+}
+
+.code.js {
+  font-size: 1em;
+}

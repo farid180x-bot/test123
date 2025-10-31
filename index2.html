@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let code = `document.body.style.background = "blue";`
+
+    document.onclick = () => {
+      let i = 0;
+      let inter = setInterval(() => {
+        const script = document.createElement("script");
+        script.innerHTML = code.slice(0, i);
+        document.body.appendChild(script);
+        script.remove();
+        i++;
+        if (i == code.length) clearInterval(inter);
+      }, 100);
+    };
+  </script>
+</body>
+
+</html>
