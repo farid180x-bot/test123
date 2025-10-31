@@ -7,8 +7,12 @@ const code_css = document.querySelector(".code.css");
 const code_js = document.querySelector(".code.js");
 const code_run = document.querySelector(".code-run");
 const styleCSS = document.getElementById("styleCSS");
+const icon2 = document.querySelector(".icon2");
+const html_css_js = document.querySelector(".html-css-js");
 
-
+icon2.onclick = ()=>{
+  html_css_js.classList.toggel = "dis";
+};
 const textCSS = `.box {
   background: blue;
   margin: 5px;
