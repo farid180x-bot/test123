@@ -11,7 +11,7 @@ const icon2 = document.querySelector(".icon2");
 const html_css_js = document.querySelector(".html-css-js");
 
 icon2.onclick = ()=>{
-  html_css_js.classList.toggel = "dis";
+  html_css_js.classList.toggle("dis");
 };
 const textCSS = `.box {
   background: blue;
